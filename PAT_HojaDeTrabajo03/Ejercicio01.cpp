@@ -17,7 +17,7 @@ int Ejercicio01::findMin(int nums[], int n)
 
         }
         else {
-            return mid;
+            return nums[mid];
         }
     }
 

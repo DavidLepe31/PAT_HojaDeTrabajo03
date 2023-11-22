@@ -6,7 +6,7 @@
 vector<vector<string>>* Ejercicio02::groupAnagrams(vector<string>& strings)
 {
     
-    std::unordered_map<string, vector<string>> m;
+    /*std::unordered_map<string, vector<string>> m;
     for (auto i : strings) {
         string x(i);
         std::sort(x.begin(), x.end());
@@ -14,8 +14,8 @@ vector<vector<string>>* Ejercicio02::groupAnagrams(vector<string>& strings)
     }
     vector<vector<string>>* vect;
     for (auto i : m)
-        vect->push_back(i.second);
+        vect->push_back(i.second);*/
     
     
-    return vect;
+    return nullptr;
 }

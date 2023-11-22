@@ -7,7 +7,7 @@ int Ejercicio01::findMin(int nums[], int n)
     int min = -1;
     while (h <= tail)
     {
-        int mid = h + (h - tail) / 2;
+        int mid = h + (tail - h) / 2;
         if (mid==0||nums[mid-1]>nums[mid])
         {
             min = mid;

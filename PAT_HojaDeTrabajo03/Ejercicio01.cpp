@@ -3,7 +3,7 @@
 
 int Ejercicio01::findMin(int nums[], int n)
 {
-    int l1 = -1, r1 = n - 1, l2 = -1, r2 = n;
+    /*int l1 = -1, r1 = n - 1, l2 = -1, r2 = n;
     while (r1 - l1 > 2 && r2 - l2 > 2)
     {
         if (r1 - l1 > 2) {
@@ -29,5 +29,6 @@ int Ejercicio01::findMin(int nums[], int n)
             }
         }
     }
-    return std::min(nums[r1], nums[l2 + 1]);
+    return std::min(nums[r1], nums[l2 + 1]);*/
+    return 0;
 }

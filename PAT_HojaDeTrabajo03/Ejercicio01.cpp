@@ -9,11 +9,13 @@ int Ejercicio01::findMin(int nums[], int n)
         int mid = (h + tail) / 2;
         if (nums[mid] > nums[mid-1] && nums[mid+1]>nums[mid-1])
         {
-            h = mid+1;
+            tail = mid;
+
         }
         if (nums[mid] > nums[mid+1] && nums[mid -1] > nums[mid + 1])
         {
-            tail = mid;
+            h = mid + 1;
+
         }
         else {
             return mid;

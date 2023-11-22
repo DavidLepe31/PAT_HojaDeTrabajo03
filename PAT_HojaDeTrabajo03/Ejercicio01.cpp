@@ -4,23 +4,20 @@ int Ejercicio01::findMin(int nums[], int n)
 {
     int h = 0;
     int tail = n;
+    int min = -1;
     while (h < tail)
     {
         int mid = (h + tail) / 2;
-        if (nums[mid] > nums[mid-1] && nums[mid+1]>nums[mid-1])
+        if (mid==0||nums[mid-1]>nums[mid])
         {
-            tail = mid;
-
-        }
-        if (nums[mid] > nums[mid+1] && nums[mid -1] > nums[mid + 1])
-        {
-            h = mid + 1;
+            min = mid;
+            tail = mid - 1;
 
         }
         else {
-            return mid;
+            h = mid + 1;
         }
     }
 
-    return 0;
+    return min;
 }

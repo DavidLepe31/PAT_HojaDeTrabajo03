@@ -16,7 +16,7 @@ vector<vector<string>>* Ejercicio02::groupAnagrams(vector<string>& strings)
     }
 
     vector<vector<string>> v;
-    vector<vector<string>>* vf=&v;
+    vector<vector<string>>* vf=new  vector<vector<string>>();
     for (auto i : mp)
         vf->push_back(i.second);
     

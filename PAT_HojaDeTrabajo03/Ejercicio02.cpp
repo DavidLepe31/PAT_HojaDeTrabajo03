@@ -21,5 +21,5 @@ vector<vector<string>>* Ejercicio02::groupAnagrams(vector<string>& strings)
         vf->push_back(i.second);
     
     
-    return nullptr;
+    return vf;
 }

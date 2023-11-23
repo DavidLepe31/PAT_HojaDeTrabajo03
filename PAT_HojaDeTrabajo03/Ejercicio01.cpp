@@ -3,20 +3,14 @@
 
 int Ejercicio01::findMin(int nums[], int n)
 {
-    int i = 0;
-    int j = n;
+    int min_ele = nums[0];
 
-    while (i < j) {
-        int mid = (i + j) / 2;
-        if (nums[mid] < nums[j]) {
-            j = mid;
-        }
-        else {
-            i = mid + 1;
+    
+    for (int i = 0; i < n; i++) {
+        if (nums[i] < min_ele) {
+            min_ele = nums[i];
         }
     }
 
-    return nums[i];
+    return min_ele;
 }
-    
-
